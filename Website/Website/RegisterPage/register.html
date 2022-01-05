@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Del Luna - Register</title>
+    <script src="../jquery.js"></script>
+    <script src="register.js"></script>
+    <link rel="stylesheet" href="registerpage.css">
+</head>
+<body>
+    <div class="header">
+        <div class="title">
+            <li class="nav">
+                <img src="../assets/hamburger_menu.png" alt="menu">
+                <ul>
+                    <a href="../HomePage/homepage.html" class="nav-menu">
+                        <li>Home</li>
+                    </a>
+                    <li class="nav-menu">Catalog >
+                        <ul class="nav-menu-item">
+                            <a href="../AlbumCatalogPage/albumcatalogpage.html">
+                                <li>Album Catalog</li>
+                            </a>
+                            <a href="../MerchCatalogPage/merchcatalogpage.html">
+                                <li>Merchandise Catalog</li>
+                            </a>
+                        </ul>
+                    </li>
+                    <a href="../TestimonialPage/testimonialpage.html" class="nav-menu">
+                        <li >Testimonial</li>
+                    </a>
+                </ul>
+            </li>
+            
+            <div class="logo-and-text">
+                <a href="../HomePage/homepage.html">
+                    <div class="logo">
+                        <img src="../assets/logo.png" alt="">
+                    </div>
+                    <div class="store-name">Store Del Luna</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="register-form">
+            <div class="form-title">New User</div>
+            <div class="username">
+                <input type="text" placeholder="Username" id="tb_username">
+            </div>
+            <div class="password">
+                <input type="password" placeholder="Password" id="tb_password">
+            </div>
+            <div class="confirm-password">
+                <input type="password" placeholder="Confirm Password" id="tb_confirm">
+            </div>
+            <div class="fullname">
+                <input type="text" placeholder="Full Name" id="tb_fullname">
+            </div>
+            Gender
+            <div class="gender">
+                <input type="radio" name="gender" id="rbMale" value="male"> Male
+                <br>
+                <input type="radio" name="gender" id="rbFemale" value="female"> Female
+            </div>
+            <div class="email">
+                <input type="email" placeholder="Email" id="tb_email">
+            </div>
+            <div class="age">
+                <input type="number" placeholder="Age" id="tb_age">
+            </div>
+            <div class="toc">
+                <input type="checkbox" id="cb_toc"> I agree to Terms and Condition
+            </div>
+            <button class="btn-register" onclick="validateNewUser()">Register</button>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="ctc">Contact Us</div>
+        <div class="ctc_logos">
+            <a href="https://facebook.com">
+                <img src="../assets/facebook.png" alt="facebook_logo">
+            </a>
+            <a href="https://instagram.com">
+                <img src="../assets/instagram.png" alt="instagram_logo">
+            </a>
+            <a href="https://twitter.com">
+                <img src="../assets/twitter.png" alt="twitter_logo">
+            </a>
+        </div>
+        <div class="copyright">© All Rights Reserved</div>
+    </div>
+</body>
+</html>
